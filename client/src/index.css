@@ -19,3 +19,10 @@ body{
   color: white;
   background-color: #090908;
 }
+
+
+
+.no-scrollbar{
+  scrollbar-width: none;
+  
+}
