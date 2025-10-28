@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React  from "react";
 import BlurCircle from "../components/BlurCircle";
 import { useParams } from "react-router-dom";
+import DateSelect from "../components/DateSelect";
 import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import { Heart, PlayCircle, PlayCircleIcon, StarIcon } from "lucide-react";
 import timeFormat from "../lib/timeFormat";
@@ -73,7 +74,13 @@ return show ? (
           ))}
         </div>
       </div>
+
+      <DateSelect dateTime={show.dateTime} ID={id}/>
+
     </div>
+   
+
+
   </div>
 ) : (
   <div>Loading...</div>
